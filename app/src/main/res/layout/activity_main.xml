@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RPG Dice Roller"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/roll_output"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/roll_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roll"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/modifier_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/modifier_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Modifier Here"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/d20_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roll_output" />
+
+    <Button
+        android:id="@+id/d20_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text=" d20"
+        app:icon="@drawable/d20_48x48"
+        app:iconTint="#ffffff"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toTopOf="@+id/d10_button"
+        app:layout_constraintEnd_toStartOf="@+id/d12_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modifier_input" />
+
+    <Button
+        android:id="@+id/d12_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text=" d12"
+        app:icon="@drawable/d12_48x48"
+        app:iconTint="#ffffff"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toTopOf="@+id/d100_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/d20_button"
+        app:layout_constraintTop_toBottomOf="@+id/modifier_input" />
+
+    <Button
+        android:id="@+id/d10_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text=" d10"
+        app:icon="@drawable/d10_48x48"
+        app:iconTint="#ffffff"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toTopOf="@+id/d8_button"
+        app:layout_constraintEnd_toStartOf="@+id/d100_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d20_button" />
+
+    <Button
+        android:id="@+id/d100_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="d100"
+        app:icon="@drawable/percentage_48x48"
+        app:iconTint="#ffffff"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toTopOf="@+id/d6_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/d10_button"
+        app:layout_constraintTop_toBottomOf="@+id/d12_button" />
+
+    <Button
+        android:id="@+id/d8_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="  d8"
+        app:icon="@drawable/d8_48x48"
+        app:iconTint="#ffffff"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toTopOf="@+id/d4_button"
+        app:layout_constraintEnd_toStartOf="@+id/d6_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d10_button" />
+
+    <Button
+        android:id="@+id/d6_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="  d6"
+        app:icon="@drawable/d6_48x48"
+        app:iconTint="#ffffff"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toTopOf="@+id/d2_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/d8_button"
+        app:layout_constraintTop_toBottomOf="@+id/d100_button" />
+
+    <Button
+        android:id="@+id/d4_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="  d4"
+        app:icon="@drawable/d4_48x48"
+        app:iconTint="#ffffff"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/d2_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d8_button" />
+
+    <Button
+        android:id="@+id/d2_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="  d2"
+        app:icon="@drawable/coins_48x48"
+        app:iconTint="#ffffff"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/d4_button"
+        app:layout_constraintTop_toBottomOf="@+id/d6_button" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Icons provided by IconCubic and VisualPharm."
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
